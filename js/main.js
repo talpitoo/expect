@@ -1,4 +1,15 @@
 $(function () {
+    // load css async https://github.com/filamentgroup/loadCSS
+    var ss = window.document.createElement("link");
+    var ref = window.document.getElementsByTagName("noscript")[0];
+    ss.rel = "stylesheet";
+    ss.href = "css/minify.css?ver=05092014";
+    ss.media = "only x";
+    ref.parentNode.insertBefore(ss, ref);
+    setTimeout(function () {
+        ss.media = "all";
+    });
+
     // helpers
     // mobile detection
     function isMobile() {
@@ -85,7 +96,7 @@ $(window).load(function () {
     if ($(window).width() >= 768) {
         var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=05092014">');
         $headerImage.bind('load', function () {
-            $('header').css('background-image', 'url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=05092014)');
+            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=05092014)');
         });
     }
 });
