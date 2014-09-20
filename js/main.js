@@ -3,7 +3,7 @@ $(function () {
     var ss = window.document.createElement("link");
     var ref = window.document.getElementsByTagName("noscript")[0];
     ss.rel = "stylesheet";
-    ss.href = "css/minify.css?ver=16092014";
+    ss.href = "css/minify.css?ver=20092014";
     ss.media = "only x";
     ref.parentNode.insertBefore(ss, ref);
     setTimeout(function () {
@@ -27,7 +27,7 @@ $(function () {
 
     // async web fonts
     WebFontConfig = {
-        google: { families: ['Open+Sans:400,300,700,800,400italic,300italic:latin', 'Alegreya+Sans+SC:300:latin'] }
+        google: { families: ['Open+Sans:400,300,700,400italic:latin', 'Alegreya+Sans+SC:300:latin'] }
     };
     (function () {
         var wf = document.createElement('script');
@@ -94,9 +94,9 @@ $(function () {
 // replace low quality images after the page loads
 $(window).load(function () {
     if ($(window).width() >= 768) {
-        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=16092014">');
+        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=20092014">');
         $headerImage.bind('load', function () {
-            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=16092014)');
+            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=20092014)');
         });
     }
 });
