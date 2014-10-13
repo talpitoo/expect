@@ -53,34 +53,16 @@
 
 /* NOMINEE */
 
-#awwwards.nominee.black a{
-	background-image: url(../img/awwwards_nominee_black.png);
-}
-#awwwards.nominee.silver a{
-	background-image: url(../img/awwwards_nominee_silver.png);
-}
-#awwwards.nominee.white a{
-	background-image: url(../img/awwwards_nominee_white.png);
-}
-#awwwards.nominee.green a{
-	background-image: url(../img/awwwards_nominee_green.png);
+#awwwards.honorable.black a{
+	background-image: url(../img/awwwards_honorable_black.png);
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2),	only screen and (min-device-pixel-ratio: 1.5) {
 
 	/* NOMINEE */
 
-	#awwwards.nominee.black a{
-		background-image: url(../img/awwwards_nominee_black@2x.png);
-	}
-	#awwwards.nominee.silver a{
-		background-image: url(../img/awwwards_nominee_silver@2x.png);
-	}
-	#awwwards.nominee.white a{
-		background-image: url(../img/awwwards_nominee_white@2x.png);
-	}
-	#awwwards.nominee.green a{
-		background-image: url(../img/awwwards_nominee_green@2x.png);
+	#awwwards.honorable.black a{
+		background-image: url(../img/awwwards_honorable_black@2x.png);
 	}
 
 }

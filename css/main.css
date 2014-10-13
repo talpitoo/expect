@@ -8,7 +8,7 @@ body { font-family: "Open Sans","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",
 .color-magenta:active,
 .color-magenta:focus { color: #906; }
 .logo { margin: 15px 0 0 -32px; }
-header { color: #fff; background: url(../img/stanley-kubrick-2001-space-odyssey-low-quality.jpg?ver=07102014) top center no-repeat; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(../img/stanley-kubrick-2001-space-odyssey-low-quality.jpg?ver=07102014); background-size: cover; padding: 0 47px 100px 47px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+header { color: #fff; background: url(../img/stanley-kubrick-2001-space-odyssey-low-quality.jpg?ver=14102014) top center no-repeat; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(../img/stanley-kubrick-2001-space-odyssey-low-quality.jpg?ver=14102014); background-size: cover; padding: 0 47px 100px 47px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
 header h1 { font-weight: bold; font-size: 65px; margin-top: 0; }
 header q { font-style: italic; font-size: 25px; }
 header .stripe { margin-top: 250px; border-left: 15px solid rgba(255, 255, 255, 0.2); margin-left: -47px; padding: 20px 20px 20px 47px; }
@@ -40,12 +40,12 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .text-big { font-size: 18px; font-weight: 300; }
 .featured .container { position: relative; min-height: 500px; }
 .featured .btn { margin-top: 5px; text-transform: uppercase; font-weight: 300; }
-.nexus10 { background: url(../img/nexus10.png?ver=07102014) center center no-repeat; right: -300px; top: -40px; }
-.nexus5 { background: url(../img/nexus5.png?ver=07102014) center center no-repeat; }
+.nexus10 { background: url(../img/nexus10.png?ver=14102014) center center no-repeat; right: -300px; top: -40px; }
+.nexus5 { background: url(../img/nexus5.png?ver=14102014) center center no-repeat; }
 .nexus10,
 .nexus5 { width: 800px; height: 600px; background-size: 100% 100%; position: absolute; cursor: pointer; }
-.portfolio-tablet { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-tablet.jpg?ver=07102014) center 379px no-repeat; background-size: 100% auto; position: absolute; width: 607px; height: 379px; top: 87px; left: 114px; }
-.portfolio-smartphone { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-smartphone.jpg?ver=07102014) 178px center no-repeat; background-size: auto 100%; position: absolute; width: 178px; height: 316px; top: 216px; left: 27px; }
+.portfolio-tablet { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-tablet.jpg?ver=14102014) center 379px no-repeat; background-size: 100% auto; position: absolute; width: 607px; height: 379px; top: 87px; left: 114px; }
+.portfolio-smartphone { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-smartphone.jpg?ver=14102014) 178px center no-repeat; background-size: auto 100%; position: absolute; width: 178px; height: 316px; top: 216px; left: 27px; }
 .novalite .portfolio-tablet { background-position: center 0px; }
 .tt .portfolio-tablet { background-position: center -379px; }
 .vackor .portfolio-tablet { background-position: center -758px; }
@@ -58,12 +58,12 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .tt .portfolio-descriptions li:nth-child(2),
 .vackor .portfolio-descriptions li:nth-child(3) { display: block; }
 
-.intermission { background-color: #000; overflow: hidden; cursor: url(../img/eva-pod-cursor64x64.png?ver=07102014) 32 32, crosshair; }
+.intermission { background-color: #000; overflow: hidden; cursor: url(../img/eva-pod-cursor64x64.png?ver=14102014) 32 32, crosshair; }
 .intermission h1,
 .intermission p { color: #fff; }
 .intermission .container { position: relative; min-height: 300px; }
 
-.start { background: #906 url(../img/solar-system.png?ver=07102014) no-repeat top center; background-size: 1600px 440px; }
+.start { background: #906 url(../img/solar-system.png?ver=14102014) no-repeat top center; background-size: 1600px 440px; }
 .start h1 { font-family: 'Open Sans'; color: #fff; text-transform: none; font-weight: 300; margin-bottom: 80px; }
 .start .btn { border-radius: 0; padding: 18px 50px; }
 .start .btn-default { background: none transparent; border: 1px solid #fff; color: #fff; transition: all 200ms ease 0s; }
@@ -76,9 +76,9 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .start .btn-primary:focus { background: none #fff; border: 1px solid #fff; color: #906; margin-left: 40px; transition: all 200ms ease 0s; }
 .start .btn-primary:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-.stars { background: url(../img/moon-surface.png?ver=07102014) bottom center no-repeat; background-size: 100% auto; }
+.stars { background: url(../img/moon-surface.png?ver=14102014) bottom center no-repeat; background-size: 100% auto; }
 .stars .container { position: relative; }
-.moonlanders { background: transparent url(../img/moonlanders.png?ver=07102014) top left no-repeat; width: 525px; height: 300px; background-size: 100% 100%; position: absolute; bottom: -100px; right: 110px; }
+.moonlanders { background: transparent url(../img/moonlanders.png?ver=14102014) top left no-repeat; width: 525px; height: 300px; background-size: 100% 100%; position: absolute; bottom: -100px; right: 110px; }
 
 
 
