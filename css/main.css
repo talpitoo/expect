@@ -23,6 +23,7 @@ header .stripe { transform: translateZ(0deg); }
 .beyond .row .row [class*="col-"] { transition: all 200ms ease 0s; }
 .beyond .row .row [class*="col-"]:hover { transition: all 200ms ease 0s; -webkit-transform: scale(1.1); transform: scale(1.1); }
 .alert { border-radius: 0; margin: 0; }
+blockquote { border: none; padding: 0; font-style: italic; font-size: inherit; }
 
 
 
@@ -46,17 +47,20 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .nexus5 { width: 800px; height: 600px; background-size: 100% 100%; position: absolute; cursor: pointer; }
 .portfolio-tablet { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-tablet.jpg?ver=14102014) center 379px no-repeat; background-size: 100% auto; position: absolute; width: 607px; height: 379px; top: 87px; left: 114px; }
 .portfolio-smartphone { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); transition: all 500ms ease 0s; background: url(../img/portfolio-smartphone.jpg?ver=14102014) 178px center no-repeat; background-size: auto 100%; position: absolute; width: 178px; height: 316px; top: 216px; left: 27px; }
-.novalite .portfolio-tablet { background-position: center 0px; }
-.tt .portfolio-tablet { background-position: center -379px; }
-.vackor .portfolio-tablet { background-position: center -758px; }
-.novalite .portfolio-smartphone { background-position: 0px center; }
-.tt .portfolio-smartphone { background-position: -178px center; }
-.vackor .portfolio-smartphone { background-position: -356px center; }
+.dreamers .portfolio-tablet { background-position: center 0px; }
+.novalite .portfolio-tablet { background-position: center -379px; }
+.tt .portfolio-tablet { background-position: center -758px; }
+.vackor .portfolio-tablet { background-position: center -1137px; }
+.dreamers .portfolio-smartphone { background-position: 0px center; }
+.novalite .portfolio-smartphone { background-position: -178px center; }
+.tt .portfolio-smartphone { background-position: -356px center; }
+.vackor .portfolio-smartphone { background-position: -534px center; }
 .portfolio-descriptions li { transition: all 500ms ease 0s; float: left; display: none; }
 .blank .portfolio-descriptions li:nth-child(1),
-.novalite .portfolio-descriptions li:nth-child(1),
-.tt .portfolio-descriptions li:nth-child(2),
-.vackor .portfolio-descriptions li:nth-child(3) { display: block; }
+.dreamers .portfolio-descriptions li:nth-child(1),
+.novalite .portfolio-descriptions li:nth-child(2),
+.tt .portfolio-descriptions li:nth-child(3),
+.vackor .portfolio-descriptions li:nth-child(4) { display: block; }
 
 .intermission { background-color: #000; overflow: hidden; cursor: url(../img/eva-pod-cursor64x64.png?ver=14102014) 32 32, crosshair; }
 .intermission h1,

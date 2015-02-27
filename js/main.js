@@ -46,7 +46,7 @@ $(function () {
         var elementSmartphone = $('.portfolio-smartphone');
         var elementIntermission = $('.icon-expecticons-poole');
         if (isScrolledIntoView(elementSmartphone) && !shownSmartphone) {
-            $('.featured').removeClass().addClass('featured novalite');
+            $('.featured').removeClass().addClass('featured dreamers');
             shownSmartphone = true;
         }
         if (isScrolledIntoView(elementIntermission) && !shownIntermission) {
@@ -55,12 +55,14 @@ $(function () {
         }
     });
     $('.nexus5').on('click', function () {
-        if ($('.featured').hasClass('tt')) {
+        if ($('.featured').hasClass('novalite')) {
+            $('.featured').removeClass('blank novalite').addClass('tt');
+        } else if ($('.featured').hasClass('tt')) {
             $('.featured').removeClass('blank tt').addClass('vackor');
         } else if ($('.featured').hasClass('vackor')) {
-            $('.featured').removeClass('blank vackor').addClass('novalite');
+            $('.featured').removeClass('blank vackor').addClass('dreamers');
         } else {
-            $('.featured').removeClass('blank novalite').addClass('tt');
+            $('.featured').removeClass('blank dreamers').addClass('novalite');
         }
         if (ga.hasOwnProperty('loaded') && ga.loaded === true) {
             ga('send', 'event', 'button', 'click', 'devices');
