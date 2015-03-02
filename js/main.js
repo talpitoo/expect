@@ -85,9 +85,9 @@ $(function () {
 // replace low quality images after the page loads
 $(window).load(function () {
     if ($(window).width() >= 768) {
-        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=14102014">');
+        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=02032015">');
         $headerImage.bind('load', function () {
-            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=14102014)');
+            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=02032015)');
         });
     }
 });
