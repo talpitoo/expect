@@ -54,7 +54,7 @@ $(function () {
             shownIntermission = true;
         }
     });
-    $('.nexus5').on('click', function () {
+    $('.nexus5, .portfolio-next').on('click', function () {
         if ($('.featured').hasClass('upwork')) {
             $('.featured').removeClass('blank upwork').addClass('novalite');
         } else if ($('.featured').hasClass('novalite')) {

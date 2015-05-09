@@ -36,7 +36,7 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .beyond h1 { margin-top: -50px; }
 .beyond h2 { font-size: 24px; color: #000; margin: 0 0 30px; }
 
-.featured { background-color: #ececec; overflow: hidden; }
+.featured { background-color: #ececec; overflow: hidden; position: relative; }
 .featured h2 { font-family: 'Open Sans'; font-size: 18px; font-weight: 300; text-transform: none; margin-bottom: 30px; }
 .text-big { font-size: 18px; font-weight: 300; }
 .featured .container { position: relative; min-height: 500px; }
@@ -64,6 +64,9 @@ section h2 { font-family: 'Alegreya Sans SC'; text-transform: uppercase; font-si
 .novalite .portfolio-descriptions li:nth-child(3),
 .tt .portfolio-descriptions li:nth-child(4),
 .vackor .portfolio-descriptions li:nth-child(5) { display: block; }
+.portfolio-next { color: #fff; font-size: 20px; opacity: 0.5; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); cursor: pointer; }
+.portfolio-next:before { transition: all 200ms ease 0s; content: "»"; position: absolute; bottom: 75px; right: 50px; font-size: 100px; }
+.portfolio-next:hover:before { right: 45px; }
 
 .intermission { background-color: #000; overflow: hidden; cursor: url(../img/eva-pod-cursor64x64.png?ver=09052015) 32 32, crosshair; }
 .intermission h1,
@@ -198,6 +201,12 @@ footer p:nth-child(2) { margin-bottom: 15px; }
     .nexus10 { right: -450px; }
     .logo-footer { margin-top: -50px; }
     .moonlanders { right: 70px; }
+}
+
+@media (min-width: 768px) {
+    .portfolio-next { background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%); background-repeat: repeat-x; left: auto; right: 0; bottom: 0; position: absolute; text-align: center; top: 0; width: 15%; }
+    .portfolio-next:before { top: 50%; right: 50%; margin: -50px -30px 0 0; }
+    .portfolio-next:hover:before { right: 48%; }
 }
 
 @media (max-width: 767px) {
