@@ -55,14 +55,16 @@ $(function () {
         }
     });
     $('.nexus5').on('click', function () {
-        if ($('.featured').hasClass('novalite')) {
+        if ($('.featured').hasClass('upwork')) {
+            $('.featured').removeClass('blank upwork').addClass('novalite');
+        } else if ($('.featured').hasClass('novalite')) {
             $('.featured').removeClass('blank novalite').addClass('tt');
         } else if ($('.featured').hasClass('tt')) {
             $('.featured').removeClass('blank tt').addClass('vackor');
         } else if ($('.featured').hasClass('vackor')) {
             $('.featured').removeClass('blank vackor').addClass('dreamers');
         } else {
-            $('.featured').removeClass('blank dreamers').addClass('novalite');
+            $('.featured').removeClass('blank dreamers').addClass('upwork');
         }
         if (ga.hasOwnProperty('loaded') && ga.loaded === true) {
             ga('send', 'event', 'button', 'click', 'devices');
@@ -85,9 +87,9 @@ $(function () {
 // replace low quality images after the page loads
 $(window).load(function () {
     if ($(window).width() >= 768) {
-        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=02032015">');
+        var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=09052015">');
         $headerImage.bind('load', function () {
-            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=02032015)');
+            $('header').css('background-image', 'linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(img/stanley-kubrick-2001-space-odyssey.jpg?ver=09052015)');
         });
     }
 });
