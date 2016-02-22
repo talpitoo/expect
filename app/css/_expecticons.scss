@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'expecticons';
+  src: url('../fonts/expecticons.eot?ver=21022016');
+  src: url('../fonts/expecticons.eot?ver=21022016#iefix') format('embedded-opentype'),
+       url('../fonts/expecticons.ttf?ver=21022016') format('truetype'),
+       url('../fonts/expecticons.woff?ver=21022016') format('woff'),
+       url('../fonts/expecticons.svg?ver=21022016#expecticons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i,
+.icomoon-liga {
+  // use !important to prevent issues with browser extensions that change fonts
+  font-family: 'expecticons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  overflow: hidden;
+
+  // Enable Ligatures (browser support http://google.github.io/material-design-icons/#using-the-icons-in-html)
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// fallback
+// .icon-expecticons-astronaut:before {
+//   content: '\e600';
+// }
+//
+// .icon-expecticons-googleplus:before {
+//   content: '\e601';
+// }
+//
+// .icon-expecticons-facebook:before {
+//   content: '\e602';
+// }
+//
+// .icon-expecticons-instagram:before {
+//   content: '\e603';
+// }
+//
+// .icon-expecticons-twitter:before {
+//   content: '\e604';
+// }
+//
+// .icon-expecticons-github:before {
+//   content: '\e605';
+// }
+//
+// .icon-expecticons-et:before {
+//   content: '\e606';
+// }
+//
+// .icon-expecticons-jetsons:before {
+//   content: '\e607';
+// }
+//
+// .icon-expecticons-ufo:before {
+//   content: '\e608';
+// }
+//
+// .icon-expecticons-tt:before {
+//   content: '\e60b';
+// }
+//
+// .icon-expecticons-poole:before {
+//   content: '\e60c';
+// }

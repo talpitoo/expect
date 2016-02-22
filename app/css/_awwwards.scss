@@ -1,0 +1,58 @@
+.awwwards {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  text-indent: -666em;
+  overflow: hidden;
+  z-index: 999;
+  transition: all 1s ease;
+
+  &.top {
+    top: 0;
+
+    &.left a {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.bottom {
+    bottom: 0;
+
+    &.left a {
+      background-position: -23px 4px;
+    }
+
+    &.right a {
+      background-position: -23px 4px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 126px;
+    height: 126px;
+    background-repeat: no-repeat;
+    background-position: 4px -23px;
+    background-size: 145px 145px;
+  }
+
+  &.honorable.black a {
+    background-image: url('../img/awwwards_honorable_black.png');
+
+    @media only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url('../img/awwwards_honorable_black@2x.png');
+    }
+  }
+}

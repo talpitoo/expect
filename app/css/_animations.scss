@@ -1,0 +1,145 @@
+// monolith
+.monolith-container {
+  width: 120px;
+  height: 270px;
+  position: relative;
+  perspective: 500px;
+  margin-top: 50px;
+}
+
+.monolith {
+  animation: spinX 30s infinite linear;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s ease 0s;
+  width: 100%;
+  height: 100%;
+
+  figure {
+    display: block;
+    position: absolute;
+    background-color: $magenta-transparent;
+    backface-visibility: hidden;
+  }
+
+  .front,
+  .back {
+    height: 270px;
+    width: 120px;
+  }
+
+  .right,
+  .left {
+    height: 270px;
+    left: 45px;
+    width: 30px;
+  }
+
+  .top,
+  .bottom {
+    height: 30px;
+    top: 120px;
+    width: 120px;
+  }
+
+  .front {
+    transform: rotateX(0deg) translateZ(15px);
+  }
+
+  .back {
+    transform: rotateX(-180deg) translateZ(15px);
+  }
+
+  .right {
+    transform: rotateY(90deg) translateZ(60px);
+  }
+
+  .left {
+    transform: rotateY(-90deg) translateZ(60px);
+  }
+
+  .top {
+    transform: rotateX(90deg) translateZ(135px);
+  }
+
+  .bottom {
+    transform: rotateX(-90deg) translateZ(135px);
+  }
+
+  .no-csstransforms3d & {
+    .back,
+    .right,
+    .left,
+    .top,
+    .bottom {
+      display: none;
+    }
+  }
+}
+
+
+@keyframes spinX {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+// Dr. Frank Poole
+.animation-placeholder {
+  font-size: 30px;
+  cursor: pointer;
+
+  a {
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      outline: none;
+    }
+  }
+}
+
+.animation-spin {
+  animation: spinZ 4s infinite linear;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  color: $white;
+  font-size: inherit;
+  transform: translateZ(0deg);
+
+  span {
+    display: inline-block;
+  }
+}
+
+.animation-flyoff {
+  animation: enlarge 2s 1 cubic-bezier(1, 0, 1, 0);
+  transform: translateZ(0deg);
+}
+
+@keyframes spinZ {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    font-size: 30px;
+  }
+
+  100% {
+    font-size: 3000px;
+  }
+}

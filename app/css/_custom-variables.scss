@@ -1,0 +1,32 @@
+// custom variables
+$magenta:                  #906;
+$magenta-transparent:      rgba(153, 0, 102, .5);
+$white:                    #fff;
+$gray-base:                #000;
+$gray-darker:              #333;
+$gray-dark:                #393939;
+$gray:                     #666;
+$gray-light:               #ccc;
+$gray-lighter:             #ececec;
+$brand-primary:            $magenta;
+$body-bg:                  $white;
+$text-color:               $gray-darker;
+$link-hover-color:         $brand-primary;
+$font-family-sans-serif:   'Open Sans', 'Segoe UI', Roboto, 'Droid Sans', 'Helvetica Neue', Arial, sans-serifs;
+$font-size-base:           16px;
+$font-size-h1:             floor(($font-size-base * 2.875)); // ~46px
+$font-size-h2:             floor(($font-size-base * 1.5)); // ~24px
+$line-height-base:         1.5; // 24/16
+$headings-font-family:     'Alegreya Sans SC', 'Open Sans', 'Segoe UI', Roboto, 'Droid Sans', 'Helvetica Neue', Arial, sans-serifs;
+$headings-font-weight:     300;
+$padding-large-vertical:   18px;
+$padding-large-horizontal: 50px;
+$border-radius-base:       0;
+$border-radius-large:      0;
+$border-radius-small:      0;
+$btn-default-color:        $white;
+$btn-default-bg:           transparent;
+$btn-default-border:       $white;
+$btn-primary-color:        $magenta;
+$btn-primary-bg:           $white;
+$btn-primary-border:       $white;

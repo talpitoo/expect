@@ -1,0 +1,710 @@
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  src: url('../fonts/alegreyasans-light.eot');
+  src: url('../fonts/alegreyasans-light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/alegreyasans-light.woff2') format('woff2'),
+       url('../fonts/alegreyasans-light.woff') format('woff'),
+       url('../fonts/alegreyasans-light.ttf') format('truetype'),
+       url('../fonts/alegreyasans-light.svg#alegreyasanssc-light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-bold.eot');
+  src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-bold.woff2') format('woff2'),
+       url('../fonts/opensans-bold.woff') format('woff'),
+       url('../fonts/opensans-bold.ttf') format('truetype'),
+       url('../fonts/opensans-bold.svg#open_sansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-italic.eot');
+  src: url('../fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-italic.woff2') format('woff2'),
+       url('../fonts/opensans-italic.woff') format('woff'),
+       url('../fonts/opensans-italic.ttf') format('truetype'),
+       url('../fonts/opensans-italic.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-light.eot');
+  src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-light.woff2') format('woff2'),
+       url('../fonts/opensans-light.woff') format('woff'),
+       url('../fonts/opensans-light.ttf') format('truetype'),
+       url('../fonts/opensans-light.svg#open_sanslight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular.eot');
+  src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-regular.woff2') format('woff2'),
+       url('../fonts/opensans-regular.woff') format('woff'),
+       url('../fonts/opensans-regular.ttf') format('truetype'),
+       url('../fonts/opensans-regular.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.color-magenta {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $magenta;
+  }
+}
+
+.color-light {
+  color: $gray-light;
+}
+
+.logo {
+  margin: 15px 0 0 -32px;
+
+  @media (max-width: $screen-xs-max) {
+    margin: 0 0 0 -52px;
+  }
+
+  @media (max-width: 320px) {
+    margin: 0 0 0 -62px;
+  }
+}
+
+header {
+  color: $white;
+  padding: 0 47px 100px;
+  text-shadow: 1px 1px 5px rgba($gray-base, .2);
+  position: relative;
+  overflow: hidden;
+
+  .space-odyssey {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    z-index: -1;
+    width: auto;
+    height: 100%;
+
+    @media (min-width: 1500px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .linear-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(to right, rgba($gray-base, .5), transparent);
+  }
+
+  h1 {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    margin-top: 0;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 32px;
+    }
+  }
+
+  q {
+    font-style: italic;
+    font-size: floor(($font-size-base * 1.5625)); // ~25px
+
+    @media (max-width: $screen-xs-max) {
+      font-size: floor(($font-size-base * 1.25)); // ~20px
+    }
+
+    @media (max-width: 320px) {
+      font-size: floor(($font-size-base * 1.125)); // ~18px
+    }
+  }
+
+  .stripe {
+    margin-top: 250px;
+    border-left: 15px solid rgba($white, .2);
+    margin-left: -47px;
+    padding: 20px 20px 20px 47px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 15px;
+      padding: 15px 20px 15px 42px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 15px 20px 15px 32px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0 47px 47px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.logo,
+header,
+header h1,
+header q,
+header .stripe {
+  transform: translateZ(0deg);
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: floor(($font-size-base * 1.125)); // ~18px
+  font-weight: 300;
+
+  &:before {
+    border-top: 2px solid $gray-base;
+    content: ' ';
+    display: block;
+    margin: 35px auto;
+    width: 150px;
+  }
+}
+
+.container {
+  @media (max-width: $screen-xs-max) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.row .row [class*='col-'] {
+  @media (max-width: $screen-xs-max) {
+    padding: 0 15px;
+  }
+}
+
+.beyond {
+  .col-sm-4 {
+    transition: all 200ms ease 0s;
+
+    &:hover {
+      transition: all 200ms ease 0s;
+      transform: scale(1.1);
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding: 0 40px;
+    }
+  }
+
+  i {
+    opacity: .5;
+    margin: 50px auto 20px;
+    display: block;
+    font-size: 66px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: -50px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    color: $gray-base;
+    margin: 0 0 30px;
+  }
+}
+
+.alert {
+  margin: 0;
+}
+
+blockquote {
+  border: none;
+  padding: 0;
+  font-style: italic;
+  font-size: inherit;
+}
+
+// sections
+section {
+  padding: 100px 0;
+
+  h1,
+  h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 40px 0;
+  }
+}
+
+.featured {
+  background-color: $gray-lighter;
+  overflow: hidden;
+  position: relative;
+
+  h2 {
+    font-family: $font-family-sans-serif;
+    font-size: floor(($font-size-base * 1.125)); // ~18px
+    font-weight: 300;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    position: relative;
+    min-height: 500px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      min-height: 610px;
+    }
+  }
+
+  .btn {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.text-big {
+  font-size: floor(($font-size-base * 1.125)); // ~18px
+  font-weight: 300;
+}
+
+.nexus10,
+.nexus5 {
+  width: 800px;
+  height: 600px;
+  background-size: 100% 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nexus10 {
+  background: url('../img/nexus10.png?ver=21022016') center center no-repeat;
+  background-size: 100% 100%;
+  right: -300px;
+  top: -40px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    right: -450px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    position: static;
+    margin: 20px 0;
+  }
+}
+
+.nexus5 {
+  background: url('../img/nexus5.png?ver=21022016') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.portfolio-tablet {
+  transform: rotateZ(0deg);
+  transition: all 500ms ease 0s;
+  background: url('../img/portfolio-tablet.jpg?ver=21022016') center 379px no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  width: 607px;
+  height: 379px;
+  top: 87px;
+  left: 114px;
+
+  .dreamers & {
+    background-position: center 0;
+  }
+
+  .upwork & {
+    background-position: center -379px;
+  }
+
+  .novalite & {
+    background-position: center -758px;
+  }
+
+  .tt & {
+    background-position: center -1137px;
+  }
+
+  .vackor & {
+    background-position: center -1516px;
+  }
+
+  .dafed & {
+    background-position: center -1895px;
+  }
+}
+
+.portfolio-smartphone {
+  transform: rotateZ(0deg);
+  transition: all 500ms ease 0s;
+  background: url('../img/portfolio-smartphone.jpg?ver=21022016') 178px center no-repeat;
+  background-size: auto 100%;
+  position: absolute;
+  width: 178px;
+  height: 316px;
+  top: 216px;
+  left: 27px;
+
+  .dreamers & {
+    background-position: 0 center;
+  }
+
+  .upwork & {
+    background-position: -178px center;
+  }
+
+  .novalite & {
+    background-position: -356px center;
+  }
+
+  .tt & {
+    background-position: -534px center;
+  }
+
+  .vackor & {
+    background-position: -712px center;
+  }
+
+  .dafed & {
+    background-position: -890px center;
+  }
+}
+
+.portfolio-descriptions {
+  li {
+    transition: all 500ms ease 0s;
+    float: left;
+    display: none;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-height: 220px;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    min-height: 320px;
+  }
+
+  @media (max-width: 320px) {
+    min-height: 400px;
+  }
+}
+
+.blank .portfolio-descriptions li:nth-child(1),
+.dreamers .portfolio-descriptions li:nth-child(1),
+.upwork .portfolio-descriptions li:nth-child(2),
+.novalite .portfolio-descriptions li:nth-child(3),
+.tt .portfolio-descriptions li:nth-child(4),
+.vackor .portfolio-descriptions li:nth-child(5),
+.dafed .portfolio-descriptions li:nth-child(6) {
+  display: block;
+}
+
+.portfolio-next {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:before {
+    color: $white;
+    opacity: .5;
+    text-shadow: 0 1px 2px rgba($gray-base, .6);
+    transition: all 200ms ease 0s;
+    content: '»';
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+    font-size: 100px;
+
+    &:hover,
+    &:focus {
+      right: 45px;
+
+      @media (min-width: $screen-sm-min) {
+        right: 48%;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      top: 50%;
+      right: 50%;
+      margin: -50px -30px 0 0;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    background-image: linear-gradient(to right, rgba($gray-base, 0) 0, rgba($gray-base, .5) 100%);
+    background-repeat: repeat-x;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 15%;
+  }
+}
+
+.intermission {
+  background-color: $gray-base;
+  overflow: hidden;
+  cursor: url('../img/eva-pod-cursor64x64.png?ver=21022016') 32 32, crosshair;
+
+  h1,
+  p {
+    color: $white;
+  }
+
+  .container {
+    position: relative;
+    min-height: 300px;
+  }
+}
+
+.start {
+  background: $magenta url('../img/solar-system.png?ver=21022016') no-repeat top center;
+  background-size: 1600px 440px;
+
+  h1 {
+    font-family: $font-family-sans-serif;
+    color: $white;
+    text-transform: none;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+
+  .btn {
+    font-size: floor(($font-size-base * 1.125)); // ~18px
+    line-height: 26px;
+
+    @media (max-width: $screen-xs-min) {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .btn-default {
+    transition: all 200ms ease 0s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $white;
+      border-color: $white;
+      color: $magenta;
+      transition: all 200ms ease 0s;
+    }
+  }
+
+  .btn-primary {
+    svg {
+      vertical-align: middle;
+    }
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $white;
+      border-color: $white;
+      margin-left: 40px;
+      transition: all 200ms ease 0s;
+
+      @media (max-width: $screen-xs-min) {
+        display: block;
+        margin: 0;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 80px 0;
+  }
+}
+
+.stars {
+  background: url('../img/moon-surface.png?ver=21022016') bottom center no-repeat;
+  background-size: 100% auto;
+
+  .container {
+    position: relative;
+  }
+
+  @media (min-width: 1600px) {
+    background-position: center 300px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background-size: 140% auto;
+  }
+}
+
+.moonlanders {
+  background: transparent url('../img/moonlanders.png?ver=21022016') top left no-repeat;
+  width: 525px;
+  height: 300px;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -100px;
+  right: 110px;
+
+  @media (min-width: $screen-lg-min) {
+    right: 130px;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    right: 70px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    bottom: -40px;
+    height: 200px;
+    right: 50px;
+    width: 350px;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    bottom: -40px;
+    height: 150px;
+    right: 30px;
+    width: 263px;
+  }
+}
+
+footer {
+  background-color: $gray-darker;
+  color: $gray;
+  padding: 50px 0;
+
+  a {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $gray-light;
+      transition: all 200ms ease 0s;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+
+    &:nth-child(1) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.logo-footer {
+  background-color: $gray-dark;
+  padding: 26px 36px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-top: -70px;
+
+  i {
+    display: block;
+    margin: auto;
+    font-size: 78px;
+    line-height: 78px;
+    color: $gray-light;
+  }
+
+  &:hover {
+    transition: all 200ms ease 0s;
+    transform: rotate(-5deg) scale(1.2);
+  }
+
+  p {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 !important;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-top: -50px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    float: left !important;
+    margin-top: 30px;
+  }
+}
+
+.list-social {
+  clear: both;
+  margin-top: 30px;
+
+  a {
+    font-size: 20px;
+    color: $gray;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.3);
+    }
+  }
+
+  > li {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 40px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: 10px;
+  }
+}
