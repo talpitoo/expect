@@ -216,7 +216,7 @@ gulp.task('modernizr', () => {
 // });
 
 gulp.task('inline', ['build'], () => {
-  return gulp.src('app/*.html')
+  return gulp.src('dist/*.html')
       .pipe(smoosher({
         base: 'dist'
       }))

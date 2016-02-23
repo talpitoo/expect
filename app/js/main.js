@@ -3,9 +3,9 @@
 $(function() {
   // helpers
   // mobile detection
-  // function isMobile() {
-  //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  // }
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
 
   // trigger things if scrolled into view
   function isScrolledIntoView(element) {
@@ -80,21 +80,21 @@ $(function() {
   });
 
   // parallax header
-  // if (!isMobile()) {
-  $(window).bind('load resize scroll', function() {
-    var y = $(window).scrollTop();
-    $('.space-odyssey').css({
-      'transform': 'translate3d(-50%, ' + parseInt(y / 1.5) + 'px, 0px)'
+  if (!isMobile()) {
+    $(window).bind('load resize scroll', function() {
+      var y = $(window).scrollTop();
+      $('.space-odyssey').css({
+        'transform': 'translate3d(-50%, ' + parseInt(y / 1.5) + 'px, 0px)'
+      });
     });
-  });
-  // }
+  }
 
 });
 
 // replace low quality images after the page loads
 $(window).load(function() {
   if ($(window).width() >= 768) {
-    var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=21022016">');
+    var $headerImage = $('<img src="img/stanley-kubrick-2001-space-odyssey.jpg?ver=23022016">');
     $headerImage.bind('load', function() {
       $('.space-odyssey').attr('src', $($headerImage).attr('src'));
     });

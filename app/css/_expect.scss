@@ -2,11 +2,12 @@
   color: $gray-light;
 }
 
-.logo,
 header,
 header h1,
 header q,
-header .stripe {
+header .stripe,
+header .linear-gradient,
+header img {
   transform: translateZ(0deg);
 }
 
@@ -106,7 +107,7 @@ section {
 }
 
 .nexus10 {
-  background: url('../img/nexus10.png?ver=21022016') center center no-repeat;
+  background: url('../img/nexus10.png?ver=23022016') center center no-repeat;
   background-size: 100% 100%;
   right: -300px;
   top: -40px;
@@ -122,14 +123,14 @@ section {
 }
 
 .nexus5 {
-  background: url('../img/nexus5.png?ver=21022016') center center no-repeat;
+  background: url('../img/nexus5.png?ver=23022016') center center no-repeat;
   background-size: 100% 100%;
 }
 
 .portfolio-tablet {
   transform: rotateZ(0deg);
   transition: all 500ms ease 0s;
-  background: url('../img/portfolio-tablet.jpg?ver=21022016') center 379px no-repeat;
+  background: url('../img/portfolio-tablet.jpg?ver=23022016') center 379px no-repeat;
   background-size: 100% auto;
   position: absolute;
   width: 607px;
@@ -165,7 +166,7 @@ section {
 .portfolio-smartphone {
   transform: rotateZ(0deg);
   transition: all 500ms ease 0s;
-  background: url('../img/portfolio-smartphone.jpg?ver=21022016') 178px center no-repeat;
+  background: url('../img/portfolio-smartphone.jpg?ver=23022016') 178px center no-repeat;
   background-size: auto 100%;
   position: absolute;
   width: 178px;
@@ -277,7 +278,7 @@ section {
 .intermission {
   background-color: $gray-base;
   overflow: hidden;
-  cursor: url('../img/eva-pod-cursor64x64.png?ver=21022016') 32 32, crosshair;
+  cursor: url('../img/eva-pod-cursor64x64.png?ver=23022016') 32 32, crosshair;
 
   h1,
   p {
@@ -291,7 +292,7 @@ section {
 }
 
 .start {
-  background: $magenta url('../img/solar-system.png?ver=21022016') no-repeat top center;
+  background: $magenta url('../img/solar-system.png?ver=23022016') no-repeat top center;
   background-size: 1600px 440px;
 
   h1 {
@@ -357,7 +358,7 @@ section {
 }
 
 .stars {
-  background: url('../img/moon-surface.png?ver=21022016') bottom center no-repeat;
+  background: url('../img/moon-surface.png?ver=23022016') bottom center no-repeat;
   background-size: 100% auto;
 
   .container {
@@ -374,7 +375,7 @@ section {
 }
 
 .moonlanders {
-  background: transparent url('../img/moonlanders.png?ver=21022016') top left no-repeat;
+  background: transparent url('../img/moonlanders.png?ver=23022016') top left no-repeat;
   width: 525px;
   height: 300px;
   background-size: 100% 100%;
