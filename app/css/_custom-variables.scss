@@ -30,3 +30,11 @@ $btn-default-border:       $white;
 $btn-primary-color:        $magenta;
 $btn-primary-bg:           $white;
 $btn-primary-border:       $white;
+// copy-paste from Bootstrap defaults
+$screen-xs:                480px;
+$screen-xs-min:            $screen-xs;
+$screen-sm:                768px;
+$screen-sm-min:            $screen-sm;
+$screen-lg:                1200px;
+$screen-lg-min:            $screen-lg;
+$screen-xs-max:            ($screen-sm-min - 1);

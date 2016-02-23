@@ -3,9 +3,9 @@
 $(function() {
   // helpers
   // mobile detection
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
+  // function isMobile() {
+  //   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  // }
 
   // trigger things if scrolled into view
   function isScrolledIntoView(element) {
@@ -80,14 +80,14 @@ $(function() {
   });
 
   // parallax header
-  if (!isMobile()) {
-    $(window).bind('load resize scroll', function() {
-      var y = $(window).scrollTop();
-      $('.space-odyssey').css({
-        'transform': 'translate3d(-50%, ' + parseInt(y / 1.5) + 'px, 0px)'
-      });
+  // if (!isMobile()) {
+  $(window).bind('load resize scroll', function() {
+    var y = $(window).scrollTop();
+    $('.space-odyssey').css({
+      'transform': 'translate3d(-50%, ' + parseInt(y / 1.5) + 'px, 0px)'
     });
-  }
+  });
+  // }
 
 });
 

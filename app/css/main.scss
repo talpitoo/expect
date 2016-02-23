@@ -7,7 +7,7 @@
 
 // Reset and dependencies
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print';
+// @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print';
 // @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
 
 // Core CSS
@@ -54,6 +54,8 @@
 
 // expect
 @import 'expecticons';
+@import 'fonts';
+@import 'above-the-fold';
 @import 'expect';
 @import 'animations';
 @import 'awwwards';
