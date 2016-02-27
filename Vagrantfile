@@ -56,6 +56,9 @@ Vagrant.configure(2) do |config|
   #
   # View the documentation for the provider you are using for more
   # information on available options.
+  config.vm.provider :virtualbox do |vb|
+      vb.name = "virTTualexpect"
+  end
 
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
   # such as FTP and Heroku are also available. See the documentation at
@@ -101,7 +104,10 @@ Vagrant.configure(2) do |config|
   # Install Bower
   npm install -g bower
 
-  # Finished
+  # Install Gulp
+  npm install -g gulp
+
+  # Versions
   echo "node"
   node -v
   echo "npm"
@@ -112,5 +118,10 @@ Vagrant.configure(2) do |config|
   compass version
   echo "bower"
   bower -v
+
+  # Install dependencies
+  cd shared
+  sudo npm install
+  bower install
 SHELL
 end
