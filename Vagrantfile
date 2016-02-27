@@ -118,10 +118,5 @@ Vagrant.configure(2) do |config|
   compass version
   echo "bower"
   bower -v
-
-  # Install dependencies
-  cd shared
-  sudo npm install
-  bower install
 SHELL
 end
