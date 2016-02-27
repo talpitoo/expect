@@ -16,7 +16,7 @@ Template for my [Expect Web Development](http://expect.agency/) website.
 * Install dependencies with [npm](https://www.npmjs.com/): `npm install`.
 * Install more dependencies with [bower](http://bower.io/): `bower install`.
 * Build with [gulp](http://gulpjs.com/): `gulp` and find the generated website in the `/dist` folder.
-* To watch your changes run: `gulp serve` and open http://localhost:9001 on your host machine.
+* To watch your changes run: `gulp serve` and open [localhost:9000](http://localhost:9000) on your host machine.
 * If anything goes wrong, find help on [Stack Overflow](http://stackoverflow.com/).
 
 Voilà!
