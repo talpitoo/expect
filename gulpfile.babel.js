@@ -5,6 +5,7 @@ import del from 'del';
 import scssLint from 'gulp-scss-lint';
 import modernizr from 'gulp-modernizr';
 import smoosher from 'gulp-smoosher';
+import w3cjs from 'gulp-w3cjs';
 // import critical from 'critical';
 import {
   stream as wiredep
@@ -76,6 +77,8 @@ gulp.task('html', ['styles', 'scripts'], () => {
     //.pipe($.if('*.js', $.uglify({mangle: false}))) // if uglify messes up
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
+    .pipe($.if('*.html', w3cjs()))
+    .pipe($.if('*.html', w3cjs.reporter()))
     .pipe($.if('*.html', $.htmlmin({
       collapseWhitespace: false
     })))
