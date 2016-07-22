@@ -7,6 +7,7 @@ import modernizr from 'gulp-modernizr';
 import smoosher from 'gulp-smoosher';
 import w3cjs from 'gulp-w3cjs';
 import a11y from 'gulp-accessibility';
+import webpagetest from 'gulp-webpagetest';
 // import critical from 'critical';
 import {
   stream as wiredep
@@ -15,6 +16,16 @@ from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+gulp.task('webpagetest', webpagetest({
+  url: 'http://expect.agency/',
+  key: 'YOUR_WEBPAGETEST_API_KEY',
+  firstViewOnly: true,
+  budget: {
+    SpeedIndex: 1000,
+    visualComplete: 1000
+  }
+}));
 
 gulp.task('styles', () => {
   return gulp.src('app/css/*.scss')
