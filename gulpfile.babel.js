@@ -5,6 +5,9 @@ import del from 'del';
 import scssLint from 'gulp-scss-lint';
 import modernizr from 'gulp-modernizr';
 import smoosher from 'gulp-smoosher';
+import w3cjs from 'gulp-w3cjs';
+import a11y from 'gulp-accessibility';
+import webpagetest from 'gulp-webpagetest';
 // import critical from 'critical';
 import {
   stream as wiredep
@@ -13,6 +16,16 @@ from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+gulp.task('webpagetest', webpagetest({
+  url: 'http://expect.agency/',
+  key: 'YOUR_WEBPAGETEST_API_KEY',
+  firstViewOnly: true,
+  budget: {
+    SpeedIndex: 1000,
+    visualComplete: 1000
+  }
+}));
 
 gulp.task('styles', () => {
   return gulp.src('app/css/*.scss')
@@ -68,6 +81,23 @@ const testLintOptions = {
 
 gulp.task('lint', lint('app/js/**/*.js'));
 
+gulp.task('a11y', function() {
+  return gulp.src('app/*.html')
+    .pipe(a11y({
+      force: true,
+      accessibilityLevel: 'WCAG2AAA',
+      reportLevels: {
+        notice: false,
+        warning: false,
+        error: true
+      }
+      // ignore: [
+      //   'WCAG2A.Principle2.Guideline2_4.2_4_2.H25.1.NoTitleEl'
+      //   'WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2'
+      // ]
+    }))
+});
+
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({
@@ -76,6 +106,8 @@ gulp.task('html', ['styles', 'scripts'], () => {
     //.pipe($.if('*.js', $.uglify({mangle: false}))) // if uglify messes up
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
+    .pipe($.if('*.html', w3cjs()))
+    .pipe($.if('*.html', w3cjs.reporter()))
     .pipe($.if('*.html', $.htmlmin({
       collapseWhitespace: false
     })))

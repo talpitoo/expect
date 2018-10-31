@@ -108,6 +108,9 @@ Vagrant.configure(2) do |config|
   # Install Gulp
   npm install -g gulp
 
+  # Install PhantomJS (required for accessibility check)
+  npm install phantomjs-prebuilt
+
   # Versions
   echo "node"
   node -v
