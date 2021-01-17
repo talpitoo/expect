@@ -1,5 +1,11 @@
-.vagrant
-.tmp
-.sass-cache
-bower_components
+# dependencies
 node_modules
+bower_components
+
+# compiled output
+/.tmp
+/.vagrant
+
+# System Files
+.DS_Store
+Thumbs.db
