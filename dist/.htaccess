@@ -7,7 +7,3 @@ Header set Cache-Control "max-age=604800, public"
 <Files *.html>
 SetOutputFilter DEFLATE
 </Files>
-# redirect www.domain.com to domain.com
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.expect.agency$ [NC]
-RewriteRule ^(.*)$ http://expect.agency/$1 [R=301,L]
